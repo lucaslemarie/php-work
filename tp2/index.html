@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire contact</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<header>
+		<h1 class="logo">web1.local</h1>
+		<ul class="menu">
+			<li><a href="#">Accueil</a></li>
+		</ul>
+	</header>
+		<div class="content">
+			<aside>
+				<h1 class="h1_aside">Nous contacter</h1>
+				<h2 class="h2_aside">Nous serions ravis de vous entendre !</h2>
+			</aside>
+			<form method="post" action="form.php">
+				<label for="firstname">Prénom<sup>*</sup> :</label>
+				<input type="text" name="firstname" placeholder="Entrez votre prénom"
+				required="required">
+				<label for="surname">Nom de famille<sup>*</sup> :</label>
+				<input type="text" name="surname" placeholder="Entrez votre nom de famille"
+				required="required">
+				<label for="email">Email<sup>*</sup> :</label>
+				<input type="email" name="email" placeholder="Entrez l'email"
+				required="required">
+				<label for="comment">Commentaire<sup>*</sup> :</label>
+				<textarea rows="8" name="comment" placeholder="Entrez votre commentaire"
+				required="required"></textarea>
+				<input type="submit" value="Soumettre" id="Soumettre">
+			</form>
+		</div>
+</body>
+</html>
